@@ -1,6 +1,4 @@
 import React from "react";
-
-import Breadcrumbs from "../components/Breadcrumbs";
 import { Link, useParams } from "react-router-dom";
 import Loading from "../components/Loading";
 import { useGlobalContext } from "../context";

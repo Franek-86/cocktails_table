@@ -2,7 +2,7 @@ import Row from "../components/Row";
 import Loading from "../components/Loading";
 import { useGlobalContext } from "../context";
 const Cocktails = () => {
-  const { cocktails, loading, fetchDrinks } = useGlobalContext();
+  const { cocktails, loading } = useGlobalContext();
 
   if (loading) {
     return <Loading />;

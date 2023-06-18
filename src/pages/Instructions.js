@@ -1,14 +1,10 @@
-import React, { useEffect } from "react";
-import Breadcrumbs from "../components/Breadcrumbs";
-import Loading from "../components/Loading";
-import { useParams, Link } from "react-router-dom";
-import pic from "../images/test.jpg";
-import instructionPic from "../images/instructionPic.jpg";
+import React from "react";
+import { Link } from "react-router-dom";
 import { useGlobalContext } from "../context";
-
 import { useNavigate } from "react-router-dom";
+
 export default function Instructions() {
-  const { cocktail, loading, getCocktail } = useGlobalContext();
+  const { cocktail } = useGlobalContext();
   // const { id } = useParams();
   const navigate = useNavigate();
 
@@ -20,6 +16,7 @@ export default function Instructions() {
   // if (loading) {
   //   return <Loading />;
   // }
+
   if (!cocktail) {
     navigate("/");
   } else {

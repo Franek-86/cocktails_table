@@ -1,7 +1,7 @@
 import { Link, useLocation } from "react-router-dom";
 import { useGlobalContext } from "../context";
 function Breadcrumbs() {
-  const { cocktail, loading, getCocktail, useId, useName } = useGlobalContext();
+  const { useId, useName } = useGlobalContext();
 
   const location = useLocation();
 
