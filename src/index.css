@@ -5,6 +5,7 @@ Variables
 */
 :root {
   --primaryLightColor: #d4e6a5;
+  --primaryLighterColor: #e2eaca;
   --primaryColor: #476a2e;
   --primaryDarkColor: #c02c03;
   --mainWhite: #fff;
@@ -294,7 +295,7 @@ Cocktails List
 }
 .trBody:hover {
   cursor: pointer;
-  background: var(--primaryLightColor);
+  background: var(--primaryLighterColor);
 }
 .trBody:active {
   color: var(--primaryColor);
@@ -524,25 +525,29 @@ Footer
   width: 100%;
   bottom: 0;
   height: 2rem;
-  background-color: var(--darkGrey);
+  background-color: var(--mainBlack);
 }
 .footer-center {
   height: 100%;
   width: 100%;
   display: grid;
   place-items: center;
+  font-size: 0.9rem;
 }
 
 .footer-center p {
   display: block;
   margin: 0;
-  color: var(--primaryColor);
+  color: var(--lightRed);
 }
 
 .footer-center a {
-  color: var(--primaryColor);
+  color: var(--lightRed);
   font-weight: 400;
 }
+.footer-center i {
+  font-size: 0.7rem;
+}
 .footer-center a:hover {
-  color: var(--lightRed);
+  color: var(--mainRed);
 }
