@@ -12,32 +12,30 @@ const Cocktails = () => {
   const test2 = Object.keys(test);
 
   return (
-    <div>
-      <section className='section'>
-        <h2 className='section-title'>cocktail list</h2>
+    <section className='section'>
+      <h2 className='section-title'>cocktail list</h2>
 
-        <article className='table-container'>
-          <table className='table'>
-            <thead className='thead'>
-              <tr className='trHead'>
-                {test2.map((item, index) => {
-                  return (
-                    <th className='th' key={index}>
-                      {item}
-                    </th>
-                  );
-                })}
-              </tr>
-            </thead>
-            <tbody className='tbody'>
-              {cocktails.map((item, index) => {
-                return <Row key={item.id} {...item} />;
+      <article className='table-container'>
+        <table className='table'>
+          <thead className='thead'>
+            <tr className='trHead'>
+              {test2.map((item, index) => {
+                return (
+                  <th className='th' key={index}>
+                    {item}
+                  </th>
+                );
               })}
-            </tbody>
-          </table>
-        </article>
-      </section>
-    </div>
+            </tr>
+          </thead>
+          <tbody className='tbody'>
+            {cocktails.map((item, index) => {
+              return <Row key={item.id} {...item} />;
+            })}
+          </tbody>
+        </table>
+      </article>
+    </section>
   );
 };
 
