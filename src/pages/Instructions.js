@@ -20,7 +20,7 @@ export default function Instructions() {
   if (!cocktail) {
     navigate("/");
   } else {
-    const { name, instructions, ingredients, idLink } = cocktail;
+    const { name, instructions, ingredients } = cocktail;
     return (
       <section className='section cocktail-section'>
         <h2 className='section-title'>make your {name}</h2>
@@ -45,8 +45,8 @@ export default function Instructions() {
             </p>
             <p className='text'>
               If you need any further assistance during the preparation of your{" "}
-              <span>{name}</span>cocktail, visit our &nbsp;
-              <Link to={`/cocktail/contact`}>contact page</Link>
+              <span>{name}</span>cocktail, visit our
+              <Link to={`/cocktail/contact`}> contact page</Link>
               &nbsp;and can get in touch with an {name} specialist.
             </p>
           </div>
